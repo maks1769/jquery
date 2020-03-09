@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hillel home work</title>
+    <style>
+        .tooltip {
+            position: relative;
+        }
+        .tooltip-content {
+            position: absolute;
+            bottom: -20px;
+            background-color: #fffdf3;
+            opacity: .8;
+        }
+        .list-items {
+            display: none;
+        }
+        .active + .list-items {
+            display: block;
+        }
+        .tab-title {
+            display: flex;
+        }
+        .tab-title a {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        .tab-content {
+            border: 1px solid black;
+            max-width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task1</h2>
+    <div class="tooltip" data-tooltip="Текст для всплывающей подсказки.">
+        Наведи курсор на меня ;)
+    </div>
+
+    <h2>Task2</h2>
+    <ul class="list">
+        <li>
+            <button class="list-title">Click here</button>
+            <ul class="list-items">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Task3</h2>
+    <div class="tab-container">
+        <div class="tab-title">
+            <a href="#tab1">Tab1</a>
+            <a href="#tab2">Tab2</a>
+            <a href="#tab3">Tab3</a>
+        </div>
+        <div class="tab-content">
+            <div id="tab1">
+                Tab1 - Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate debitis eum nisi praesentium ut voluptas.
+            </div>
+            <div id="tab2">
+                Tab2 - Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Iusto, nemo!
+            </div>
+            <div id="tab3">
+                Tab3 - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
+                adipisicing.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
